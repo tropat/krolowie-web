@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Królowie polscy - gra przeglądarkowa</title>
+        <meta name="description" content="Gra, w której będziesz mógł sprawdzić , czy pamiętasz, w jakiej kolejsności panowali kolejni królowie polscy">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Playball&amp;subset=latin-ext" rel="stylesheet"> 
+        
+        <script type="text/javascript" src="check.js"></script>
+        <script type="text/javascript" src="sound.js"></script>
+
+        <!--[if lt IE 9]>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	    <![endif]-->
+
+    </head>
+    <body onload="sound()">
+
+        <header style="margin-top:0; position:fixed; top:0;">
+            <div style="float:left; width:50%;"><a href="index.html"><h1 style="font-size: 40px;">Królowie</h1></a></div>
+            <div class="pkt">Pkt: <span id="num">0</span></div>
+            <div style="clear:both;"></div>
+        </header>
+
+        <main>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <div id="column1" class="column"></div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div id="column2" class="column"></div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div id="column3" class="column"></div>
+                    </div>
+
+                    <div id="write">
+                        <input type="text" id="check" autofocus>
+                        <input type="submit" id="button" value="Sprawdź" onclick="sprawdz();">
+
+                        <input type="submit" value="Podpowiedź" onclick="podp();">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+	    <script src="js/bootstrap.min.js"></script>
+
+    </body>
+</html>
